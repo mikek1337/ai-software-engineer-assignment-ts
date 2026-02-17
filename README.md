@@ -62,3 +62,45 @@ Create `EXPLANATION.md` (max 250 words) containing:
 ## Submission
 
 - Submit a public GitHub repository URL containing your solution to the Google form link provided.
+
+## How to run locally
+
+clone the repositiory and move into the directory
+```sh
+git clone https://github.com/mikek1337/ai-software-engineer-assignment-ts
+
+cd ./ai-software-engineer-assignment-ts
+```
+
+install dependency
+
+```sh
+npm install
+```
+
+run tests
+```
+npm test
+```
+
+## How to run using Docker
+clone the repositiory and move into the directory
+```sh
+git clone https://github.com/mikek1337/ai-software-engineer-assignment-ts
+
+cd ./ai-software-engineer-assignment-ts
+```
+
+build image
+```sh
+docker build -t http-client-tests .
+```
+
+run the image
+```sh
+docker run http-client-test
+```
+
+
+
+
