@@ -17,10 +17,8 @@ export class HttpClient {
     const headers = opts?.headers ?? {};
 
     if (api) {
-      
-      if (
-        !(this.oauth2Token instanceof OAuth2Token) || this.oauth2Token.expired
-      ) {
+
+      if (!(this.oauth2Token instanceof OAuth2Token) || this.oauth2Token.expired) {
         this.refreshOAuth2();
       }
 
